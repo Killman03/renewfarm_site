@@ -1,3 +1,52 @@
-body{
-    background-color: yellow;
+.main__info{
+    display: flex;
+    margin-top: 213px;
+}
+
+.main__images {
+    position: relative;
+}
+
+.flag__image {
+    width: 420px;
+    height: 203px;
+    margin: 0px 0px 0 448px;
+    z-index: 1;
+    position: relative;
+}
+
+.chick__image {
+    margin-top: -155px;
+}
+
+.main__text{
+    margin-top: 124px;
+    margin-left: -136px;
+}
+
+.main__text p{
+    text-align: center;
+    font-size: 36px;
+    font-family: 'Kurale', serif;
+    font-weight: Regular;
+}
+
+.main__button {
+    float: right;
+    margin-top: 65px;
+    margin-bottom: 103px;
+}
+
+.main__button a {
+    display: inline-block;
+    text-align: center;
+    font-size: 36px;
+    font-weight: 400;
+    background-color: rgba(81, 17, 17, 0.12);
+    color: #511111;
+    text-decoration: none;
+    border: none;
+    border-radius: 22px;
+    width: 515px;
+    height: 70px;
 }
