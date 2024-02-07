@@ -1,0 +1,135 @@
+footer{
+    background-color: #D9D9D9;
+}
+
+.footer__wrap {
+    display: flex;
+    flex-direction: column;
+    padding: 63px 0 34px;
+}
+
+.footer__row {
+    display:flex;
+}
+.social {
+    max-width: 274px;
+}
+
+.social__button{
+    width: 285px;
+    height: 57px;
+    background-color: #EA6D40;
+    text-align: center;
+    justify-content: center;
+}
+
+.social__button a{
+    font-size: 16px
+}
+
+.social__address {
+    text-align: center;
+}
+
+
+.social__icons {
+    display: flex;
+    margin: 25px 0;
+    text-align: center;
+    justify-content: center;
+}
+
+.social__icons a{
+    padding: 26px 18px;
+}
+
+.social__icons img:hover{
+    border: 1px solid black;
+}
+
+.social__icons img{
+    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
+    width: 24px;
+    height: 24px;
+}
+
+.map {
+    max-width: 530px;
+    display: flex;
+    flex-direction: column;
+}
+
+.map iframe{
+    margin-bottom: 28px;
+    margin: 0 auto;
+}
+
+.subscribe {
+    max-height: 399px;
+}
+
+
+.subscribe__text h3 {
+    font-family: 'Raleway', serif;
+    font-weight: 400;
+    max-width: 309px;
+    text-align: center;
+    font-size: 20px;
+
+}
+
+.subscribe__text h5 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 100;
+    max-width: 309px;
+    font-size: 14px;
+    text-align: start;
+    font-style: italic;
+}
+.subscribe__form form {
+    padding-bottom:
+}
+
+
+.subscribe__form form label {
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    display: block;
+}
+
+.subscribe__form form input {
+    max-width: 306px;
+    max-height: 28px;
+    border: none;
+}
+
+input[type="submit"] {
+  background-color: #EA6D40;
+  padding: 21px 93px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 28px;
+  max-height: 57px!important;
+}
+
+input[type="submit"]:hover {
+  background-color: #e8793e;
+}
+
+.apppa {
+    margin-top: 27px;
+    text-align: center;
+}
+
+.apppa p {
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    max-width: 509px;
+}
+
+.apppa img {
+    max-width: 151px;
+    max-height: 56px;
+}

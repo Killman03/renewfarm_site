@@ -1,11 +1,59 @@
 <footer>
     <div class="container">
         <div class="footer__wrap">
-            <div class="social">
-                <div class="social__button"><a>Contact us</a></div>
+            <div class="footer__row">
+                <div class="social">
+                    <div class="social__button">
+                        <a href="{{ url_for('contacts') }}">Contact us</a>
+                    </div>
+                    <div class="social__icons">
+                        <a><img src="{{ url_for('static', filename='img/whats.svg') }}"></a>
+                        <a><img src="{{ url_for('static', filename='img/mail.svg') }}"></a>
+                        <a><img src="{{ url_for('static', filename='img/telegram.svg') }}"></a>
+                    </div>
+                    <div class="social__address">
+                        <p>Kyrgyzstan, Chui region, Leskhoz village, Gidrovskaya street 16</p>
+                    </div>
+                </div>
+                <div class="map">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2761.1562621923727!2d74.55179331467261!3d42.97883204271107!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2skg!4v1707208910246!5m2!1sru!2skg" width="399" height="317" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                    <div class="apppa">
+                        <p>Renew Regenerative Farms is a member of the
+                        American Pastured Poultry Producers Association
+                        </p>
+                        <img src="{{ url_for('static', filename='img/apppa.png') }}">
+                    </div>
+                </div>
+                <div class="subscribe">
+                    <div class="subscribe__text">
+                        <h3>
+                           Leave your email to receive
+                        </h3>
+                        <h3>
+                            Special offers!
+                        </h3>
+                        <h5>
+                            *Указывает обязательное поле
+                        </h5>
+                    </div>
+                    <div class="subscribe__form">
+                        <form action="submit_form.php" method="post">
+                            <label for="name">Name*</label>
+                            <input type="text" id="name" name="name">
+                            <br>
+                            <label for="surname">Surname*</label>
+                            <input type="text" id="surname" name="surname">
+                            <br>
+                            <label for="email">Email*</label>
+                            <input type="email" id="email" name="email">
+                            <br>
+                            <input type="submit" value="Subscribe">
+                        </form>
+                    </div>
+                </div>
             </div>
-            <div class="map"></div>
-            <div class="subscribe"></div>
         </div>
     </div>
 </footer>

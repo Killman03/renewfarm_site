@@ -1,6 +1,15 @@
 .main__info{
-    display: flex;
     margin-top: 213px;
+    display: flex;
+    flex-direction: column;
+}
+
+.info__top {
+    display: flex;
+}
+
+.info__bottom {
+    flex: 1 0 auto;
 }
 
 .main__images {
@@ -22,6 +31,7 @@
 .main__text{
     margin-top: 124px;
     margin-left: -136px;
+    width: 525px;
 }
 
 .main__text p{
@@ -35,6 +45,7 @@
     float: right;
     margin-top: 65px;
     margin-bottom: 103px;
+    flex-shrink: 1;
 }
 
 .main__button a {

@@ -46,15 +46,9 @@
 }
 
 .pages__links li a:hover {
-    color: #EA6D40
+    color: #EA6D40;
 }
 
-/*.orange-block {
-    width: 1253px;
-    height: 163px;
-    background-color: #EA6D40;
-    padding: 19px 131px;
-}*/
 
 .orange-block p {
     margin-top: 32px;
