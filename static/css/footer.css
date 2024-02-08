@@ -89,7 +89,6 @@ footer{
     font-style: italic;
 }
 .subscribe__form form {
-    padding-bottom:
 }
 
 
@@ -105,7 +104,7 @@ footer{
     border: none;
 }
 
-input[type="submit"] {
+.subscribe__form form input[type="submit"] {
   background-color: #EA6D40;
   padding: 21px 93px;
   font-size: 16px;
@@ -114,7 +113,7 @@ input[type="submit"] {
   max-height: 57px!important;
 }
 
-input[type="submit"]:hover {
+.subscribe__form form input[type="submit"]:hover {
   background-color: #e8793e;
 }
 

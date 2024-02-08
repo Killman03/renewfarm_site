@@ -1,13 +1,19 @@
+.chick__main{
+    margin-top: 46px;
+}
+
 .chick__box {
     width: 100%;
     height: 130px;
     background-color: #D29E45;
-    margin-top: 46px;
     text-align: center
 }
 
 .chick__box h3 {
-    padding: 25px 0;
+    font-family: "Alegreya", serif;
+    font-weight: 700;
+    font-size: 24px;
+    padding-top: 24px;
 }
 
 .chick__box p {
@@ -23,6 +29,7 @@
 
 .row {
     display: flex;
+    justify-content: space-between;
 }
 
 .box-column {
@@ -52,16 +59,70 @@
     padding: 24px 32px 7px 40px;
 }
 
-.box__1 {
-}
-
-.box__2 {
-}
-
 .box__3 {
     margin-top: 57px;
 }
 
 .box__4 {
     margin-top: 43px;
+}
+
+.chick__box__2  h3{
+    padding: 48px 0px;
+}
+
+.vs__box {
+
+}
+
+.vs__box h4 {
+    font-family: "Alegreya", serif;
+    font-weight: 700;
+    font-size: 32px;
+    padding: 41px 0px 31px 55px;
+}
+
+.vs__box p {
+    font-family: "Alegreya", serif;
+    font-weight: 400;
+    font-size: 24px;
+    text-align: center;
+    max-width: 347px;
+}
+
+.vs__img {
+    max-width: 372px;
+    height: 100%;
+}
+
+.vs__one {
+    position: absolute;
+    margin-left: -20px;
+}
+
+.vs__two {
+    position: absolute;
+    margin-left: -20px;
+
+}
+
+.vs__box__1 {
+    margin-right: 81px;
+}
+
+.vs__box__2 {
+    padding-left: 101px;
+}
+
+.chick__box__last {
+    width: 100%;
+    background-color: #83BE89;
+}
+
+.chick__box__last p{
+    font-weight: 700;
+    font-style: italic;
+    font-size: 24px;
+    text-align: center;
+    padding: 73px 70px;
 }
