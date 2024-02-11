@@ -1,26 +1,49 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, request
+from flask_mail import Mail, Message
 
 app = Flask(__name__)
 
+app.config['SECRET_KEY'] = 'flkasjfkjoifjoisajef832u8rewif'
+app.config['MAIL_SERVER'] = "smtp.googlemail.com"
+app.config['MAIL_PORT'] = 587
+app.config['MAIL_USE_TLS'] = True
+app.config['MAIL_USERNAME'] = "tg3381234@gmail.com"
+app.config['MAIL_PASSWORD'] = "qfkj jcdj fufa nxsb"
 
-@app.route('/')
+mail = Mail(app)
+
+
+@app.route('/', methods=["POST", "GET"])
 def index():
     return render_template('index.html')
 
 
-@app.route('/about')
+@app.route('/about', methods=["POST", "GET"])
 def about():
     return render_template('about.html')
 
 
-@app.route('/pasture-Raised-Chicken')
+@app.route('/pasture-Raised-Chicken', methods=["POST", "GET"])
 def chicken_pasture():
     return render_template('chick.html')
 
 
-@app.route('/contact')
+@app.route('/contact', methods=["POST", "GET"])
 def contacts():
     return render_template('contacts.html')
+
+
+@app.route('/send_email', methods=['POST'])
+def send_email():
+    name = request.form['name']
+    surname = request.form['surname']
+    email = request.form['email']
+    comment = request.form['comment']
+    subject = 'Subject_1'
+    msg = Message(subject=subject, sender=email, recipients=['tg3381234@gmail.com'])
+    msg.body = comment
+    mail.send(msg)
+    return 'Email sent seccessfully'
 
 
 @app.route('/farming-club')

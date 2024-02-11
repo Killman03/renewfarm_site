@@ -3,7 +3,6 @@
 {% block title %} Главная страница {% endblock %}
 
 
-
 {% block content %}
     <div class="main">
         <div class="container">
@@ -18,14 +17,14 @@
                         </div>
                     </div>
                     <div class="main__text">
-                        <p>
+                        <p class="lang" key="main__text">
                             Renew is a collection of local farms in Kyrgyzstan, passionate about sustainable, regenerative farming practices. We are farmers who are committed to raising the healthiest and most nutritious chicken.
                         </p>
                     </div>
                 </div>
-                <div class="info__buttom">
+                <div class="info__button">
                     <div class="main__button">
-                        <a href="{{ url_for ('contacts') }}">
+                        <a class="lang" key="main__button" href="{{ url_for ('contacts') }}">
                             CONTACT US
                         </a>
                     </div>

@@ -1,0 +1,46 @@
+@media(max-width: 960px){
+    .pages__links {
+        gap: 40px;
+    }
+    .pages__name {
+        margin: 44px 0px 32px;
+    }
+    .container{
+    }
+}
+
+
+@media(max-width: 720px){
+    .pages__links {
+        gap: 40px;
+    }
+    .pages__name {
+        margin: 44px 0px 32px;
+
+    }
+}
+
+@media(max-width: 540px){
+    .pages__links {
+        gap: 40px;
+    }
+    .pages__name {
+        margin: 44px 0px 32px;
+    }
+    .orange-block p {
+    max-width: 540px;
+    width: 100%;
+    padding: 27px 0;
+    margin-top: 32px;
+    font-size: 12px;
+    text-align: center;
+    }
+
+    .main__info{
+        margin-top: 0;
+    }
+
+    .main__text {
+        z-index: 9999;
+    }
+}

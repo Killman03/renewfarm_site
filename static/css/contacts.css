@@ -17,42 +17,86 @@
     font-weight: 400;
 }
 
+
 .contacts__form{
-    margin: 4px 0px 62px 496px;
+    position: relative;
+    margin: 40px 0px 0px 496px;
+    width: 100%;
+    max-width: 450px;
+    line-height: 1;
 }
 
-.contacts__form form {
-
+.contacts__form form{
+    margin-bottom: 53px;
 }
-
-.contacts__form h3 {
+.contacts__form h2 {
     font-size: 32px;
     font-weight: 700;
     color: #EA6D40;
-    padding-left: 16px;
+    padding: 0 0 15px 16px;
+    ;
+}
+
+.contacts__form p {
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    font-weight: 100;
+    font-style: italic;
+    padding: 17px 0px;
+}
+
+.contacts__form form .input__box {
+    margin: 0 0 6px 0;
 }
 
 .contacts__form form label {
     font-family: 'Raleway', sans-serif;
     font-size: 14px;
     display: block;
+    padding-bottom: 6px;;
 }
 
 .contacts__form form input {
+    position: relative;
     border: none;
+    outline: none;
+    width: 100%;
+    background-color: rgba(217, 217, 217, 0.46);
 }
 
-.contacts__form form input[type="submit"] {
-  background-color: rgba(81, 17, 17, 0.12);
-  font-size: 36px;
-  cursor: pointer;
-  margin-top: 28px;
-  max-height: 75px!important;
-  color: 511111;
-  padding: 15px 61px;
-  border-radius: 22px;
+.contacts__form form textarea{
+    position: relative;
+    border: none;
+    outline: none;
+    width: 100%;
+    background-color: rgba(217, 217, 217, 0.46);
+    height: 197px;
+}
+
+.con__bot {
+    background-color: rgba(81, 17, 17, 0.12);
+    font-size: 36px;
+    cursor: pointer;
+    margin-top: 28px;
+    max-height: 75px!important;
+    color: #511111;
+    padding: 15px 61px;
+    border-radius: 22px;
+    width: 60%;
+    margin-left: 20%;
+}
+
+.con__bot input {
+    background-color: rgba(81, 17, 17, 0.12);
+    font-size: 36px;
+    cursor: pointer;
+    max-height: 75px!important;
+    color: #511111;
+    padding: 15px 61px;
+    border-radius: 22px;
+    width: 100%;
+    background: transparent;
 }
 
 .contacts__form form input[type="submit"]:hover {
-  background-color: #e8793e;
 }

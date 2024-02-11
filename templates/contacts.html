@@ -9,23 +9,38 @@
                 <div class="contacts__img">
                     <img src="{{ url_for('static', filename='img/chickens.jpg') }}" alt="img">
                 </div>
-                <p>
+                <p class="lang" key="contacts__text">
                     Demand for our chicken has increased and we quickly sold out. If you want to order chicken meat from our next batch, please contact us! And please let us know if you have any questions or want more information! Thank you for your interest!
                 </p>
             </div>
             <div class="contacts__form">
-                <h3>We are glad that you chose us!</h3>
-                <form>
-                    <label for="name">Name*</label>
-                    <input type="text" id="name" name="name">
-                    <label for="surname">Surname*</label>
-                    <input type="text" id="surname" name="surname">
-                    <label for="email">Email*</label>
-                    <input type="email" id="email" name="email">
-                    <label for="comment">Comment</label>
-                    <input type="text" id="comment" name="comment">
-                    <br>
-                    <input type="submit" value="send">
+                <h2 class="lang" key="contacts__form__h2">We are glad that you chose us!</h2>
+                <p class="lang" key="subscribe__text__h5">*Required fields</p>
+                {% for msg in get_flashed_messages() %}
+                <div class="flash">{{msg}}</div>
+                {% endfor %}
+                <form action="/send_email" method="post">
+                    <div class="input__box">
+                        <label for="name"  class="lang" key="name">Name*</label>
+                        <input type="text" id="name" name="name" required='required'>
+                    </div>
+                    <div class="input__box">
+                        <label for="surname" class="lang" key="surname">Surname*</label>
+                        <input type="text" id="surname" name="surname" required='required'>
+                    </div>
+                    <div class="input__box">
+                        <label for="email" class="lang" key="email">Email*</label>
+                        <input type="email" id="email" name="email" required='required'>
+                    </div>
+                    <div class="input__box">
+                        <label for="comment">Comment</label>
+                        <textarea id="comment" name="comment" class="lang" key="comment"></textarea>
+                    </div>
+                    <div>
+                        <span class="con__bot" class="lang" key="submit_2">
+                            <input type="submit">
+                        </span>
+                    </div>
                 </form>
             </div>
         </div>

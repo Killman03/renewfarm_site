@@ -4,27 +4,25 @@
             <div class="logo">
                 <img src="{{ url_for('static', filename='img/logo.svg') }}">
             </div>
-            <div class="lang">
-                <img src="{{ url_for('static', filename='img/ru.svg') }}">
-                <img src="{{ url_for('static', filename='img/eng.svg') }}">
+            <div class="language">
+                <button id="ru" class="translate"><img src="{{ url_for('static', filename='img/ru.png') }}"></button>
+                <button id="eng" class="translate"><img src="{{ url_for('static', filename='img/eng.png') }}"></button>
             </div>
         </div>
         <div class="header-middle">
             <div class="pages__name">
                 <ul class="pages__links">
-                    <li><img src="{{ url_for('static', filename='img/left_line.svg') }}"></li>
-                    <li><a href="{{ url_for('index') }}">HOME</a></li>
-                    <li><a href="{{ url_for('farming_club') }}">FARMING CLUB</a></li>
-                    <li><a href="{{ url_for('chicken_pasture') }}">PASTURE RAISED CHICKEN</a></li>
-                    <li><a href="{{ url_for('about') }}">ABOUT US</a></li>
-                    <li><a href="{{ url_for('contacts') }}">CONTACT</a></li>
-                    <li><img src="{{ url_for('static', filename='img/right_line.svg') }}"></li>
+                    <li><a href="{{ url_for('index') }}" class="lang" key="home">HOME</a></li>
+                    <li><a href="{{ url_for('farming_club') }}" class="lang" key="club">FARMING CLUB</a></li>
+                    <li><a href="{{ url_for('chicken_pasture') }}" class="lang" key="pasture">PASTURE RAISED CHICKEN</a></li>
+                    <li><a href="{{ url_for('about') }}" class="lang" key="about">ABOUT US</a></li>
+                    <li><a href="{{ url_for('contacts') }}" class="lang" key="contact">CONTACT</a></li>
                 </ul>
             </div>
         </div>
         <div class="header-bottom">
             <div class="orange-block">
-                <p>Откройте для себя питательную ценность цыплят, выращенных на пастбищах, с Renew!</p>
+                <p class="lang" key="orange-block">Discover the Nutritional Power of Pasture-Raised Chicken with Renew! </p>
             </div>
         </div>
     </div>

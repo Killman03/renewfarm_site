@@ -9,28 +9,32 @@
     display: flex;
 }
 
-.lang{
+.translate {
+    background: transparent;
+    border: none;
+}
+
+.language {
     margin-top: 239px;
 }
 
-.lang img{
+.language img{
+    background: transparent;
     width: 52px;
     height: 43px;
 }
 
-.lang img:hover {
-    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.5);
-}
 
 .pages__name {
     margin: 44px 0px 32px;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: nowrap;
+    padding: 0;
 }
 
 .pages__links {
     list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 70px;
 }
 
 .pages__links li {
@@ -42,7 +46,8 @@
     text-decoration: none;
     color: #666666;
     font-weight: 800;
-    padding: 0px 75px;
+    text-transform: uppercase;
+    text-wrap: nowrap;
 }
 
 .pages__links li a:hover {
@@ -51,6 +56,9 @@
 
 
 .orange-block p {
+    max-width: 1200px;
+    width: 100%;
+    padding: 27px 0;
     margin-top: 32px;
     font-size: 48px;
     text-align: center;
