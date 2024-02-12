@@ -9,21 +9,21 @@
 }
 
 .contacts__text p {
-    max-width: 527px;
-    height: 431px;
-    margin-left: 81px;
-    text-align: center;
-    font-size: 32px;
-    font-weight: 400;
+  max-width: 527px;
+  height: 431px;
+  margin-left: 81px;
+  text-align: center;
+  font-size: 32px;
+  font-weight: 400;
 }
 
 
 .contacts__form{
-    position: relative;
-    margin: 40px 0px 0px 496px;
-    width: 100%;
-    max-width: 450px;
-    line-height: 1;
+  position: relative;
+  margin: 40px 0px 0px 496px;
+  width: 100%;
+  max-width: 450px;
+  line-height: 1;
 }
 
 .contacts__form form{
@@ -71,8 +71,9 @@
     width: 100%;
     background-color: rgba(217, 217, 217, 0.46);
     height: 197px;
+    resize: none;
 }
-
+/* 
 .con__bot {
     background-color: rgba(81, 17, 17, 0.12);
     font-size: 36px;
@@ -84,19 +85,23 @@
     border-radius: 22px;
     width: 60%;
     margin-left: 20%;
-}
+} */
 
-.con__bot input {
-    background-color: rgba(81, 17, 17, 0.12);
-    font-size: 36px;
-    cursor: pointer;
-    max-height: 75px!important;
-    color: #511111;
-    padding: 15px 61px;
-    border-radius: 22px;
-    width: 100%;
-    background: transparent;
+.con__bot  {
+  background-color: rgba(81, 17, 17, 0.12);
+  font-size: 36px;
+  cursor: pointer;
+  padding: 15px 61px;
+  border: none;
+  background-color: #EAE2E2;
+  padding: 15px 61px;
+  border-radius: 22px;
+  width: 100%; 
 }
-
+.con__bot:active  {
+  position: relative;
+  top: 1px;
+  left: 1px;
+}
 .contacts__form form input[type="submit"]:hover {
 }

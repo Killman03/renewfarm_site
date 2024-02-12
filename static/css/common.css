@@ -3,7 +3,10 @@
 global styles
 ---------------------------------------------
 */
-
+html,
+body {
+  height: 100%;
+}
 :root{
     --dark-bg: #191919;
     --blue-bg: #47BEC7;

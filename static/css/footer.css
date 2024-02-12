@@ -1,27 +1,29 @@
 footer{
-    background-color: #D9D9D9;
+  background-color: #D9D9D9;
+
 }
 
 .footer__wrap {
-    display: flex;
-    flex-direction: column;
-    padding: 63px 0 34px;
+  display: flex;
+  flex-direction: column;
+  padding: 63px 0 34px;
 }
 
 .footer__row {
-    display:flex;
+  display:flex;
+  margin: 0 auto;
 }
 .social {
-    max-width: 274px;
+  max-width: 274px;
 }
 
 .social__button{
-    display: flex;
-    width: 285px;
-    height: 57px;
-    background-color: #EA6D40;
-    text-align: center;
-    justify-content: center;
+  display: flex;
+  width: 285px;
+  height: 57px;
+  background-color: #EA6D40;
+  text-align: center;
+  justify-content: center;
 }
 
 .social__button a{
@@ -98,9 +100,6 @@ footer{
     font-style: italic;
     padding-bottom: 8px;
 }
-.subscribe__form form {
-}
-
 
 .subscribe__form form label {
     font-family: 'Raleway', sans-serif;

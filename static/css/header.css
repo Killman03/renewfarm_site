@@ -1,21 +1,25 @@
+
 .logo{
-    width: 283px;
-    height: 283px;
-    margin: 0 auto;
-    cursor: pointer;
+  width: 283px;
+  height: 283px;
+  margin: 0 auto;
+  cursor: pointer;
 }
 
 .header-top {
-    display: flex;
+  display: flex;
 }
 
+.header-bottom {
+  margin-bottom: 50px;
+}
 .translate {
-    background: transparent;
-    border: none;
+  background: transparent;
+  border: none;
 }
 
 .language {
-    margin-top: 239px;
+  margin-top: 239px;
 }
 
 .language img{
@@ -23,48 +27,52 @@
     width: 52px;
     height: 43px;
 }
-
-
 .pages__name {
-    margin: 44px 0px 32px;
-    padding: 0;
+  margin: 44px 0px 32px;
+  padding: 0;
 }
 
 .pages__links {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    gap: 70px;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 70px;
 }
 
 .pages__links li {
-    display: inline-block;
+  display: inline-block;
+}
+.pages__links-active{
+  color: #EA6D40;
 }
 
 .pages__links li a {
-    transition: all 0.3s ease 0s;
-    text-decoration: none;
-    color: #666666;
-    font-weight: 800;
-    text-transform: uppercase;
-    text-wrap: nowrap;
+  transition: all 0.3s ease 0s;
+  text-decoration: none;
+  color: #666666;
+  font-weight: 800;
+  text-transform: uppercase;
+  text-wrap: nowrap;
 }
 
 .pages__links li a:hover {
     color: #EA6D40;
 }
 
+.orange-block{
+  background-color: #EA6D40;
+  margin: 32px auto 0;
+  padding: 27px 0;
+  max-width: 1200px;
+  width: 100%;
+  box-shadow: 12px 16px 16px rgba(0, 0, 0, 0.5);
+}
 
 .orange-block p {
-    max-width: 1200px;
-    width: 100%;
-    padding: 27px 0;
-    margin-top: 32px;
-    font-size: 48px;
-    text-align: center;
-    font-weight: bold;
-    font-family: 'EB Garamond', serif;
-    background-color: #EA6D40;
-    box-shadow: 12px 16px 16px rgba(0, 0, 0, 0.5);
+  font-size: 48px;
+  text-align: center;
+  font-weight: bold;
+  font-family: 'EB Garamond', serif;
+  
 }
 

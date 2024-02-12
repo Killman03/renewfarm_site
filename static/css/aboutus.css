@@ -1,68 +1,59 @@
+
+
 .about__text {
-    margin: 86px 0 36px;
+  margin: 86px 0 36px;
 }
 
 .about__text h3 {
-    font-style: 700;
-    font-size: 24px;
-    text-align: left;
-    padding-bottom: 56px;
+  font-style: 700;
+  font-size: 24px;
+  text-align: left;
+  padding-bottom: 56px;
 }
 
 .about__text p {
-    font-style: 400;
-    font-size: 20px;
-    text-align: left;
+  font-style: 400;
+  font-size: 20px;
+  text-align: left;
 }
 
 .column {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .row {
-    display: flex;
-    align-items: center
+  display: flex;
+  align-items: center
 }
 
 .about__col img {
-    width: 388px;
-    height: 470px;
+  width: 388px;
+  height: 470px;
 }
-
+.about__content{
+    width: 266px;
+}
 .about__col p {
     font-family: "Bad Script", cursive;
     font-weight: 400;
     font-style: normal;
     text-align: center;
     vertical-align: middle;
+    
 }
 
 .col__1 {
     background-color: #83BE89;
 }
 
-.col__1 p{
-}
 
 .col__3 {
     background-color: #83BE89;
 }
 
 .col__3 p {
-    text-stroke: 1px;
+  -webkit-text-stroke: 1px;
 }
 
-.chick_bol {
-    max-width: 267px;
-    display: table-cell;
-    vertical-align: middle;
-}
 
-.roost {
-    max-width: 200px;
-}
-
-.field {
-    max-width: 267px;
-}
