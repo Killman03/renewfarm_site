@@ -20,7 +20,7 @@ var arrLang = {
         "email": 'Email',
         'comment': 'Comment',
         "submit_2": "Send",
-        "submit": "Subscribe",
+        "submit": "Send",
         'chick__box__h3': 'Why choose pasture-raised chickens?',
         'chick__box__p': "Here's a deep dive into the benefits",
         'box__1__h4': 'Nutritional Superiority',
@@ -67,7 +67,7 @@ var arrLang = {
         "email": 'Почта',
         'comment': 'Комментарий',
         "submit_2": "Отправить",
-        "submit": "Подписаться",
+        "submit": "Отправить",
         'chick__box__h3': 'Почему стоит выбрать цыплят, выращенных на пастбищах?',
         'chick__box__p': "Подробный разбор преимуществ",
         'box__1__h4': 'Пищевая ценность',
@@ -97,38 +97,52 @@ var arrLang = {
 }
 
  $(function (){
-  $('.translate').click(function (){
-    var lang = $(this).attr('id');
-    saveLocalLang(lang)
+     $('.translate').click(function (){
+         var lang = $(this).attr('id');
+         saveLocalLang(lang)
 
-    $('.lang').each(function(index, item) {
-      $(this).text(arrLang[lang][$(this).attr('key')]);
-    })
-  })
+         $('.lang').each(function(index, item) {
+             $(this).text(arrLang[lang][$(this).attr('key')]);
+         })
+     })
  })
 
 function saveLocalLang(language) {
     let langs
     if (localStorage.getItem('langs') == null){
-      langs = []
+        langs = []
     } else {
-      langs = JSON.parse(localStorage.getItem('langs'))
+        langs = JSON.parse(localStorage.getItem('langs'))
     }
     langs.push(language)
     localStorage.setItem('langs', JSON.stringify(langs))
 }
 
 function getLocalLang() {
-  let langs
-  if (localStorage.getItem('langs') == null){
-    langs == []
-  } else{
-    langs = JSON.parse(localStorage.getItem('langs'))
-  }
-  langs.forEach(function (language) {
-    let lang = langs[langs.length - 1]
-    $('.lang').each(function (index, item) {
-      $(this).text(arrLang[lang][$(this).attr('key')]);
-    });
-  })
+    let langs
+    if (localStorage.getItem('langs') == null){
+        langs == []
+    } else{
+        langs = JSON.parse(localStorage.getItem('langs'))
+    }
+    langs.forEach(function (language) {
+        let lang = langs[langs.length - 1]
+        $('.lang').each(function (index, item) {
+            $(this).text(arrLang[lang][$(this).attr('key')]);
+        });
+    })
 }
+
+//Change language of buttons
+ $(function (){
+     $('.translate').click(function (){
+         var lang = $(this).attr('id') ;
+         saveLocalLang(lang)
+         var input = document.querySelector(
+             'input[name="con__bot"]');
+
+         $('.con__bot').each(function(index, item) {
+             input.value=arrLang[lang][$(this).attr('key')];
+         })
+     })
+ })
