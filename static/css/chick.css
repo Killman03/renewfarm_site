@@ -1,45 +1,45 @@
 .chick__main{
-    margin-top: 46px;
+  margin-top: 46px;
 }
 
 .chick__box {
-    width: 100%;
-    height: 130px;
-    background-color: #D29E45;
-    text-align: center
+  width: 100%;
+  height: 130px;
+  background-color: #D29E45;
+  text-align: center;
 }
 
 .chick__box h3 {
-    font-family: "Alegreya", serif;
-    font-weight: 700;
-    font-size: 24px;
-    padding-top: 24px;
+  font-family: "Alegreya", serif;
+  font-weight: 700;
+  font-size: 24px;
+  padding-top: 24px;
 }
 
 .chick__box p {
-    padding-bottom: 26px;
+  padding-bottom: 26px;
 }
 
 .chick__benefits {
-    background-image: url('../img/chick_background.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+  background-image: url('../img/chick_background.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 .row {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
 .box-column {
-    display: flex;
-    flew-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 
 .box-column__1 {
-    margin: 70px 103px 172px 22px;
+  margin: 70px 103px 172px 22px;
 }
 
 .box-column__2 {

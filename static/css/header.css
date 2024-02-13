@@ -10,9 +10,7 @@
   display: flex;
 }
 
-.header-bottom {
-  margin-bottom: 50px;
-}
+
 .translate {
   background: transparent;
   border: none;
@@ -23,9 +21,9 @@
 }
 
 .language img{
-    background: transparent;
-    width: 52px;
-    height: 43px;
+  background: transparent;
+  width: 52px;
+  height: 43px;
 }
 .pages__name {
   margin: 44px 0px 32px;
@@ -36,6 +34,7 @@
   list-style: none;
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   gap: 70px;
 }
 
@@ -56,7 +55,7 @@
 }
 
 .pages__links li a:hover {
-    color: #EA6D40;
+  color: #EA6D40;
 }
 
 .orange-block{
@@ -73,6 +72,5 @@
   text-align: center;
   font-weight: bold;
   font-family: 'EB Garamond', serif;
-  
 }
 

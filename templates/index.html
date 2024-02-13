@@ -7,27 +7,22 @@
     <div class="main">
         <div class="container">
             <div class="main__info">
-                <div class="info__top">
-                    <div class="main__images">
-                        <div class="flag__image">
-                            <img src="{{ url_for('static', filename='img/flag_kg.png') }}">
-                        </div>
-                        <div class="chick__image">
-                            <img src="{{ url_for('static', filename='img/chick.png') }}">
-                        </div>
-                    </div>
-                    <div class="main__text">
-                        <p class="lang" key="main__text">
-                            Renew is a collection of local farms in Kyrgyzstan, passionate about sustainable, regenerative farming practices. We are farmers who are committed to raising the healthiest and most nutritious chicken.
-                        </p>
-                    </div>
+                <div class="main__images">
+                  <div class="flag__image">
+                    <img src="{{ url_for('static', filename='img/flag_kg.png') }}">
+                  </div>
+                  <img  class="chick__image" src="{{ url_for('static', filename='img/chick.png') }}">
+                  <div class="main__text">
+                    <p class="lang" key="main__text">
+                        Renew is a collection of local farms in Kyrgyzstan, passionate about sustainable, regenerative farming practices. We are farmers who are committed to raising the healthiest and most nutritious chicken.
+                    </p>
+                  </div>
+                  
                 </div>
                 <div class="info__button">
-                    <div class="main__button">
-                        <a class="lang" key="main__button" href="{{ url_for ('contacts') }}">
-                            CONTACT US
-                        </a>
-                    </div>
+                  <a class="lang main__button" key="main__button" href="{{ url_for ('contacts') }}">
+                      CONTACT US
+                  </a>
                 </div>
             </div>
         </div>
