@@ -1,0 +1,137 @@
+
+.menu__hidden{
+  height: 100vh;
+  overflow-y: hidden;
+} 
+/* скрываем чекбокс */
+#menu__toggle {
+  opacity: 0;
+}
+
+/* стилизуем кнопку */
+.menu__btn {
+  display: none; 
+  align-items: center;  
+  position: fixed;
+  top: 21px;
+  left: 20px;
+  width: 28px;
+  height: 28px;
+  cursor: pointer;
+  z-index: 3;
+  transition: all 0.2 ease-in-out;
+}
+
+.menu__btn > span,
+.menu__btn > span::before,
+.menu__btn > span::after {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #616161;
+}
+.menu__btn > span::before {
+  content: '';
+  top: -8px;
+}
+.menu__btn > span::after {
+  content: '';
+  top: 8px;
+}
+
+/* контейнер меню */
+.menu__box {
+  display: flex;
+  position: fixed;
+  visibility: hidden;
+  background-color: #fff;
+  padding-top: 70px;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%; 
+  margin: 0;
+  z-index: 2;
+  box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+}
+
+.menu__box img{
+  display: block;
+  object-fit: contain;  
+}
+.menu__box button{
+  position: absolute;
+  top: 18px;
+  width: 50px;
+  height: 32px;
+}
+.menu__logo{
+  position: absolute;
+  left: 46%;
+  top: 8px;
+  width: 55px;
+  height: 55px;
+}
+.menu__languages1{
+  right: 74px;
+}
+.menu__languages2{
+  right: 20px;
+}
+.menu__flex{
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 80px 0;  
+  padding-left: 50px;
+  list-style: none;
+  background-color: #83BE89;
+  width: 50%;
+ 
+}
+
+.menu__flex a{
+  transition: all 0.2s ease-in;
+  text-decoration: none;
+  color: #344C37;
+  font-weight: 500;
+  font-family: 'Inter', sans-serif;
+  text-transform: uppercase;
+  text-wrap: nowrap;
+}
+.menu__flex a:hover{
+  color: #EA6D40;
+}
+
+.menu__orange{
+  display: flex;
+  justify-content: center;
+  padding: 80px 15px;
+  width: 50%;
+  background-color: #EA6D40;
+}
+.menu__orange p{
+  font-size: 36px;
+  text-align: center;
+  font-weight: bold;
+  width: 300px;
+  font-family: 'EB Garamond', serif;
+}
+
+
+#menu__toggle:checked ~ .menu__btn > span {
+  transform: rotate(45deg);
+}
+#menu__toggle:checked ~ .menu__btn > span::before {
+  top: 0;
+  transform: rotate(0);
+}
+#menu__toggle:checked ~ .menu__btn > span::after {
+  top: 0;
+  transform: rotate(90deg);
+}
+#menu__toggle:checked ~ .menu__box  {
+  visibility: visible;
+  left: 0;
+}

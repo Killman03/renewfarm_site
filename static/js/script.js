@@ -146,3 +146,17 @@ function getLocalLang() {
          })
      })
  })
+
+// BURGER
+const menu = document.querySelector('#menu__toggle');
+const body = document.body;
+
+function hideMenu() {
+  body.classList.toggle('menu__hidden');
+}
+
+menu.addEventListener('click', hideMenu);
+
+
+
+

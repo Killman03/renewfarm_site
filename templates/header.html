@@ -10,8 +10,39 @@
                 <button id="eng" class="translate"><img src="{{ url_for('static', filename='img/eng.png') }}"></button>
             </div>
         </div>
+        <div class="hamburger-menu">
+          <input id="menu__toggle" type="checkbox" />
+          <label class="menu__btn" for="menu__toggle">
+            <span>                  
+             
+            </span>
+            
+          </label>
+
+          
+            <ul class="menu__box ">
+              <button id="ru" class="translate menu__languages1"><img src="{{ url_for('static', filename='img/ru.png') }}"></button>
+              <button id="eng" class="translate menu__languages2"><img src="{{ url_for('static', filename='img/eng.png') }}"></button>
+              <img class="menu__logo" src="../static/img/menu-logo.svg"/>
+              <!-- <img class="menu__languages" src="../static/img/menu-languages.png"/> -->
+              <div class="menu__flex">
+                <li><a href="{{ url_for('index') }}" class="lang " key="home">HOME</a></li>
+                <li><a href="{{ url_for('farming_club') }}" class="lang" key="club">FARMING CLUB</a></li>
+                <li><a href="{{ url_for('chicken_pasture') }}" class="lang" key="pasture">PASTURE RAISED CHICKEN</a></li>
+                <li><a href="{{ url_for('about') }}" class="lang" key="about">ABOUT US</a></li>
+                <li><a href="{{ url_for('contacts') }}" class="lang" key="contact">CONTACT</a></li>
+              </div>
+
+              <div class="menu__orange">
+                <p class="lang" key="orange-block">Discover the Nutritional Power of Pasture-Raised Chicken with Renew! </p>
+              </div>
+            </ul>
+        </div>
         <div class="header-middle">
             <div class="pages__name">
+
+                
+              </div>
                 <ul class="pages__links">
                     <li><a href="{{ url_for('index') }}" class="lang" key="home">HOME</a></li>
                     <li><a href="{{ url_for('farming_club') }}" class="lang" key="club">FARMING CLUB</a></li>
@@ -21,10 +52,12 @@
                 </ul>
             </div>
         </div>
-        <div class="header-bottom">
-            <div class="orange-block">
-                <p class="lang" key="orange-block">Discover the Nutritional Power of Pasture-Raised Chicken with Renew! </p>
-            </div>
+      </div>
+      <div class="header-bottom">
+        <div class="container">
+          <div class="orange-block">
+              <p class="lang" key="orange-block">Discover the Nutritional Power of Pasture-Raised Chicken with Renew! </p>
+          </div>  
         </div>
-    </div>
+      </div>
 </header>
