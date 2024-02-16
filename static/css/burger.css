@@ -63,8 +63,8 @@
 .menu__box button{
   position: absolute;
   top: 18px;
-  width: 50px;
-  height: 32px;
+  width: 39px;
+  height: 23px;
 }
 .menu__logo{
   position: absolute;
@@ -74,7 +74,7 @@
   height: 55px;
 }
 .menu__languages1{
-  right: 74px;
+  right: 56px;
 }
 .menu__languages2{
   right: 20px;
