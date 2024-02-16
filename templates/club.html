@@ -1,103 +1,53 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Club</title>
-  <link rel="stylesheet" href="../static/css/reset.css">
-  <link rel="stylesheet" href="../static/css/header.css">
-  <link rel="stylesheet" href="../static/css/common.css">
-  <link rel="stylesheet" href="../static/css/footer.css">
-  
-</head>
-<body>
-  <header>
-    <div class="container">
-        <div class="header-top">
-            <div class="logo">
-                <img src="{{ url_for('static', filename='img/logo.svg') }}">
-            </div>
-            <div class="language">
-                <button id="ru" class="translate"><img src="{{ url_for('static', filename='img/ru.png') }}"></button>
-                <button id="eng" class="translate"><img src="{{ url_for('static', filename='img/eng.png') }}"></button>
-            </div>
-        </div>
-        <div class="header-middle">
-            <div class="pages__name">
-                <ul class="pages__links">
-                    <li><a href="{{ url_for('index') }}" class="lang" key="home">HOME</a></li>
-                    <li><a href="{{ url_for('farming_club') }}" class="lang" key="club">FARMING CLUB</a></li>
-                    <li><a href="{{ url_for('chicken_pasture') }}" class="lang" key="pasture">PASTURE RAISED CHICKEN</a></li>
-                    <li><a href="{{ url_for('about') }}" class="lang" key="about">ABOUT US</a></li>
-                    <li><a href="{{ url_for('contacts') }}" class="lang" key="contact">CONTACT</a></li>
-                </ul>
-            </div>
-        </div>
-        <div class="header-bottom">
-            <div class="orange-block">
-                <p class="lang" key="orange-block">Discover the Nutritional Power of Pasture-Raised Chicken with Renew! </p>
-            </div>
-        </div>
-    </div>
-  </header>
-  <main class="main">
-  
-  </main>
-  <footer class="footer">
-      <div class="container">
-          <div class="footer__wrap">
-              <div class="footer__row">
-                  <div class="social">
-                      <div class="social__button">
-                          <a href="{{ url_for('contacts') }}" class="lang" key="social__button">Contact us</a>
-                      </div>
-                      <div class="social__icons">
-                          <a href="https://api.whatsapp.com/send/?phone=+996706347180"><img src="{{ url_for('static', filename='img/whats.svg') }}"></a>
-                          <a><img src="{{ url_for('static', filename='img/mail.svg') }}"></a>
-                          <a><img src="{{ url_for('static', filename='img/telegram.svg') }}"></a>
-                      </div>
-                      <div class="social__address">
-                          <p class="lang" key="social__address">Kyrgyzstan, Chui region, Leskhoz village, Gidrovskaya street 16</p>
-                      </div>
-                  </div>
-                  <div class="map">
-                      <iframe
-                          src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2761.1562621923727!2d74.55179331467261!3d42.97883204271107!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2skg!4v1707208910246!5m2!1sru!2skg" width="399" height="317" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-                      </iframe>
-                      <div class="apppa">
-                          <p class="lang" key="apppa">Renew Regenerative Farms is a member of the
-                          American Pastured Poultry Producers Association
-                          </p>
-                          <img src="{{ url_for('static', filename='img/apppa.png') }}">
-                      </div>
-                  </div>
-                  <div class="subscribe">
-                      <div class="subscribe__text">
-                          <h2 class="lang" key="subscribe__text">
-                             Leave your email to receive<br>Special offers!
-                          </h2>
-                          <h5 class="lang" key="subscribe__text__h5">
-                              *Required fields
-                          </h5>
-                      </div>
-                      <div class="subscribe__form">
-                          <form action="/send_email" method="post">
-                              <label for="name" class="lang" key="name">Name*</label>
-                              <input type="text" id="name" name="name">
-                              <br>
-                              <label for="surname" class="lang" key="surname">Surname*</label>
-                              <input type="text" id="surname" name="surname">
-                              <br>
-                              <label for="email" class="lang" key="email">Email*</label>
-                              <input type="email" id="email" name="email">
-                              <br>
-                              <input type="submit" class="lang" key="submit">
-                          </form>
-                      </div>
-                  </div>
+{% extends 'base.html' %}
+
+{% block title %} Club {% endblock %}
+
+
+{% block content %}
+    <main>
+      <div class="club">
+        <div class="container">
+          <section class="club__future">
+            <img src="../static/img/club-future.png" alt="Club Future">
+            <h1 class="club__future-title">             
+              <span>Будущие</span>                 
+              <span>фермеры </span>
+              <span>Кыргызстана</span>
+            </h1>
+          </section>
+          <section class="club__mission">
+              <h2 class="club__mission-title"></h2>
+              <p class="club__mission-text"></p>
+              <div class="club__mission-content">
+                <img src="../static/img/club-mission.png" alt="Club Mission">
+                <div class="club__mission-table">
+                  <h3>Членство в Клубе будущих фермеров Кыргызстана: </h3>
+                  <p>7000 сом/месяц  (ребенок)</p>
+                  <p>Еженедельные субботние встречи</p>
+                  <p>Обед в Гайд-парке</p>
+                  <p>Класс садоводства</p>
+                  <p>Практика английского языка</p>
+                  <p>Походы и игры</p>
+                  <p>Бесплатные садовые продукты  </p>
+                </div>
               </div>
-          </div>
+          </section>
+        </div>
       </div>
-  </footer>
-</body>
-</html>
+    </main>
+{% endblock %}
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
