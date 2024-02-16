@@ -11,12 +11,15 @@
 .info__bottom {
   flex: 1 0 auto;
 }
-
+/* * {
+  outline: solid red;
+} */  
 .main__images {
   display: flex; 
   align-items: flex-end;
   justify-content: space-between;
   gap: 30px;
+  
 }
 
 .flag__image {
@@ -27,12 +30,14 @@
   transform: translate(-50%);
   z-index: -1;
   position: absolute;
+  
 }
 
 .chick__image {
   position: relative;
   z-index: -2;
   object-fit: cover;  
+  overflow: visible;
 }
 
 .main__text p{
@@ -45,9 +50,8 @@
 }
 
 .main__button {
-  display: block;
-  margin-left: auto;
-  width: 515px;
+  display: inline-block;
+  float: right;
   padding: 13px 72px;
   margin-top: 65px;
   margin-bottom: 103px;
