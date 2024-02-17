@@ -23,12 +23,14 @@
 }
 
 .future-title2{
+
+}
+.green-block{
   display: block;
   margin: 0 auto;
   padding: 21px 30px;
   border-radius: 13px;
   background-color: #83BE89;
-
 }
 .future-title2 p{
   font-size: 40px;
@@ -45,7 +47,16 @@
 }
 .club__mission-title {
   text-align: center;
+  font-size: 40px;
+  font-weight: 800;
   margin-bottom: 45px;
+  word-spacing: 4 px;
+}
+.club__mission .green-block {
+  
+  padding: 1px 3px;
+  display: inline-block;
+  margin: 0;
 }
 .club__mission-text {
   text-align: center;
