@@ -68,7 +68,6 @@ footer{
 }
 
 .apppa p {
-  font-family: 'Raleway', sans-serif;
   font-size: 16px;
   max-width: 509px;
 }
@@ -85,7 +84,6 @@ footer{
 
 
 .subscribe__text h2 {
-  font-family: 'Raleway', serif;
   font-weight: 400;
   max-width: 309px;
   text-align: center;
@@ -104,7 +102,6 @@ footer{
 }
 
 .subscribe__form form label {
-  font-family: 'Raleway', sans-serif;
   font-size: 14px;
   display: block;
   padding: 6px 0;

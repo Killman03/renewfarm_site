@@ -14,7 +14,7 @@
             </div>
             <div class="map">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2761.1562621923727!2d74.55179331467261!3d42.97883204271107!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2skg!4v1707208910246!5m2!1sru!2skg" width="399" height="317" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                      src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d11711.519856202503!2d74.6513793033054!3d42.790887418485916!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNDLCsDQ3JzI3LjIiTiA3NMKwNDAnMTEuNCJF!5e0!3m2!1sru!2skg!4v1707977397252!5m2!1sru!2skg" width="399" height="317" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
               </iframe>
               <div class="apppa">
                 <p class="lang" key="apppa">Renew Regenerative Farms is a member of the
@@ -24,24 +24,29 @@
               </div>
             </div>
             <div class="subscribe">
+                {% for i in footer_text %}
                 <div class="subscribe__text">
-                    <h2 class="lang" key="subscribe__text">
-                        Leave your email to receive<br>Special offers!
+                    <h2 class="lang" key="{{ i.two }}">
+                        {{ i.one }}
                     </h2>
                     <h5 class="lang" key="subscribe__text__h5">
                         *Required fields
                     </h5>
                 </div>
+                {% endfor %}
                 <div class="subscribe__form">
                     <form action="/send_email" method="post">
                         <label for="name" class="lang" key="name">Name*</label>
                         <input type="text" id="name" name="name">
                         <br>
-                        <label for="surname" class="lang" key="surname">Surname*</label>
-                        <input type="text" id="surname" name="surname">
+                        <label for="phone" class="lang" key="phone">Phone number*</label>
+                        <input type="number" id="phone" name="phone">
                         <br>
                         <label for="email" class="lang" key="email">Email*</label>
                         <input type="email" id="email" name="email">
+                        <br>
+                        <label for="comment_1" class="lang" key="comment_1">Comment</label>
+                        <input type="text" id="comment_1" name="comment">
                         <br>
                         <input type="submit" class="lang" key="submit">
                     </form>
