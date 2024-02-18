@@ -19,6 +19,7 @@ footer{
   padding: 18px 75px;
   background-color: #EA6D40;
   text-align: center;
+  text-wrap: nowrap;
 }
 
 .social__button:hover{
