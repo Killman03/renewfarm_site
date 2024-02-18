@@ -132,12 +132,18 @@ var arrLang = {
 
  $(function (){
      $('.translate').click(function (){
-         var lang = $(this).attr('id');
-         saveLocalLang(lang)
+        var lang = $(this).attr('id');
+        saveLocalLang(lang)
+        var comment = $(this).attr('id');
+        saveLocalLang(comment)
+        
 
-         $('.lang').each(function(index, item) {
-             $(this).text(arrLang[lang][$(this).attr('key')]);
-         })
+        $('.lang').each(function(index, item) {
+            $(this).text(arrLang[lang][$(this).attr('key')]);
+            this.value=arrLang[lang][$(this).attr('key')];
+            comment.placeholder=arrLang[lang][$(this).attr('key')];
+        })
+        
      })
  })
 
@@ -167,19 +173,6 @@ function getLocalLang() {
     })
 }
 
-//Change language of buttons
- $(function (){
-     $('.translate').click(function (){
-         var lang = $(this).attr('id') ;
-         saveLocalLang(lang)
-         var input = document.querySelector(
-             'input[name="con__bot"]');
-
-         $('.con__bot').each(function(index, item) {
-             input.value=arrLang[lang][$(this).attr('key')];
-         })
-     })
- })
 
 // BURGER
 const menu = document.querySelector('#menu__toggle');

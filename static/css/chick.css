@@ -39,11 +39,11 @@
 
 
 .box-column__1 {
-  margin: 70px 103px 172px 22px;
+  margin: 70px 0px 172px;
 }
 
 .box-column__2 {
-    margin: 70px 143px 339px 0px;
+    margin: 70px 0px 339px;
 }
 
 .benefits__boxes {
@@ -52,23 +52,23 @@
 }
 
 
-.box-column div div{
-    width: 492px;
-    background-color: rgba(217, 217, 217, 0.46);
-    text-align: center;
-    padding: 24px 32px 7px 40px;
+.box-column div{
+  width: 492px;
+  background-color: rgba(217, 217, 217, 0.46);
+  text-align: center;
+  padding: 24px 32px 7px 40px;
 }
 
 .box__3 {
-    margin-top: 57px;
+  margin-top: 57px;
 }
 
 .box__4 {
-    margin-top: 43px;
+  margin-top: 43px;
 }
 
 .chick__box__2  h3{
-    padding: 48px 0px;
+  padding: 48px 0px;
 }
 
 .vs__box {
