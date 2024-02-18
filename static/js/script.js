@@ -137,11 +137,13 @@ var arrLang = {
         var comment = $(this).attr('id');
         saveLocalLang(comment)
         
+        $('.comment').each(function(index, item) {
+          this.placeholder=arrLang[comment][$(this).attr('key')];
+        })
 
         $('.lang').each(function(index, item) {
             $(this).text(arrLang[lang][$(this).attr('key')]);
             this.value=arrLang[lang][$(this).attr('key')];
-            comment.placeholder=arrLang[lang][$(this).attr('key')];
         })
         
      })
@@ -169,7 +171,11 @@ function getLocalLang() {
         let lang = langs[langs.length - 1]
         $('.lang').each(function (index, item) {
             $(this).text(arrLang[lang][$(this).attr('key')]);
+            this.value=arrLang[lang][$(this).attr('key')];
         });
+        $('.comment').each(function(index, item) {
+          this.placeholder=arrLang[comment][$(this).attr('key')];
+        })
     })
 }
 

@@ -45,7 +45,7 @@
   .row{
     flex-direction: column;
   }
-
+  
   .box-column__1 {
     margin: 70px 0 0 0;
   }
@@ -65,6 +65,17 @@
   .chick__box__last {
     display: none;
   }
+  /* ABOUT US */
+  .about__text{
+    text-align: center;
+  }
+
+  /* CONTACTS */
+  .contacts__wrapper{
+    flex-direction: column;
+    padding: 60px 0;
+  }
+  
 }
 @media(max-width: 1000px){
   .pages__links {
@@ -143,6 +154,8 @@
   }
   .footer__wrap {
     padding: 0;
+    flex-direction: column;
+    align-items: center;
   }
   .social__button {
     display: none;
@@ -297,7 +310,14 @@
   }
   .club__mission-table p {
     font-size: 20px;
-}
+  }
+  /* CONTACTS */
+  .contacts__text p{
+    font-size: 25px;
+  }
+  .contacts__form h2 {
+    font-size: 25px; 
+  }
 }
 
 @media(max-width: 600px){
@@ -413,7 +433,7 @@
   .menu__orange p{
     display: none;
   }
-
+  /* CLUB */
   .club__mission-title {
     font-size: 25px;
   }
@@ -434,12 +454,37 @@
   .club__mission-table p {
     font-size: 16px;
   }
-
+  /* FOOTER */
   .social__address {
     font-size: 16px;
   }
   .subscribe__text h2{
     font-size: 16px;
+  }
+
+  /* ABOUT US */
+  .about__text {
+    margin: 36px 0 36px;
+  }
+  .about__text h3 {
+    padding-bottom: 30px;
+  }
+
+  /* CONTACTS */
+  .contacts__text p {
+    font-size: 20px;
+  }
+  .contacts__form p{
+    font-size: 16px;
+  }
+  .contacts__form form label{
+    font-size: 16px;
+  }
+  .contacts__form form textarea{
+    font-size: 16px;  
+  }
+  .contacts__form form input{
+    font-size: 20px;
   }
 }
 
