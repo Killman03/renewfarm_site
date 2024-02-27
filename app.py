@@ -3,12 +3,12 @@ from flask_mail import Mail, Message
 
 app = Flask(__name__)
 
-app.config['SECRET_KEY'] = 'flkasjfkjoifjoisajef832u8rewif'
+app.config['SECRET_KEY'] = 'flkasjfkjoifjoisajedfasegfewqr'
 app.config['MAIL_SERVER'] = "smtp.googlemail.com"
 app.config['MAIL_PORT'] = 587
 app.config['MAIL_USE_TLS'] = True
-app.config['MAIL_USERNAME'] = "tg3381234@gmail.com"
-app.config['MAIL_PASSWORD'] = "qfkj jcdj fufa nxsb"
+app.config['MAIL_USERNAME'] = "renewregenerativefarms@gmail.com"
+app.config['MAIL_PASSWORD'] = "znuv icmd vhfo kiwh"
 
 mail = Mail(app)
 
@@ -40,7 +40,7 @@ def send_email():
     email = request.form['email']
     comment = request.form['comment']
     subject = 'Subject_1'
-    msg = Message(subject=subject, sender=email, recipients=['tg3381234@gmail.com'])
+    msg = Message(subject=subject, sender=email, recipients=['renewregenerativefarms@gmail.com'])
     msg.body = f'Name: {name}\nPhone: {phone_number}\nEmail: {email}\nComment: {comment}'
     mail.send(msg)
     return 'Email sent seccessfully'
